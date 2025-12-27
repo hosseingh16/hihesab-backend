@@ -1,0 +1,8 @@
+[program:horizon]
+process_name=%(program_name)s
+command=php /var/www/artisan horizon
+autostart=true
+autorestart=true
+stdout_logfile=/var/www/storage/logs/horizon.log
+stderr_logfile=/var/www/storage/logs/horizon_err.log
+user=www-data
